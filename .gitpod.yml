@@ -6,5 +6,5 @@ ports:
 tasks:
   - name: open_jupyter
     init: "pip install --upgrade pip"
-    before: "pip install -r requirement.txt"
+    before: "pip install -r requirements.txt"
     command: "jupyter notebook --ip=* --NotebookApp.token=''"
