@@ -4,7 +4,7 @@ ports:
 - port: 8888
   onOpen: open-browser
 tasks:
-  - name: echo
-    command: "echo 'initiarizing.....'"
-  - name: open_upyter
+  - name: open_jupyter
+    init: "pip install --upgrade pip"
+    before: "pip install -r requirement.txt"
     command: "jupyter notebook --ip=* --NotebookApp.token=''"
