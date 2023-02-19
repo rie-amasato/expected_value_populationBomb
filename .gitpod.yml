@@ -1,3 +1,6 @@
+ports:
+ - port: 8888
+   onOpen: open-browser
 tasks:
   - name: open_jupyter
     init: "pip install --upgrade pip"
